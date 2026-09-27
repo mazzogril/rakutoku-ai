@@ -55,5 +55,10 @@ footer{background:#18202a;color:#cbd5e1;padding:35px 0;font-size:13px}@media(max
   <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BCL3Y+F006GI+4TIO+5YJRM" alt="">
 </div>
   <script>
-function diag(){let p=+phone.value||0,n=+net.value||0,s=+sub.value||0,a=+ai.value||0,u=+unused.value||0;let m=p+n+s+a;let e=Math.round((Math.min(p*.25,2500)+Math.min(n*.2,1200)+Math.min(s*.5,2500)+u*1000)*12);result.style.display='block';result.innerHTML='現在の入力額：<strong>月'+m.toLocaleString()+'円</strong><br>年間では約<strong>'+(m*12).toLocaleString()+'円</strong>。<hr>見直し余地の目安：<strong>年間'+e.toLocaleString()+'円前後</strong><p>まずは「スマホ → ネット → サブスク → AI」の順で比較してみましょう。</p>'}
+function diag(){let p=+phone.value||0,n=+net.value||0,s=+sub.value||0,a=+ai.value||0,u=+unused.value||0;let m=p+n+s+a;let e=Math.round((Math.min(p*.25,2500)+Math.min(n*.2,1200)+Math.min(s*.5,2500)+u*1000)*12);result.style.display='block';result.innerHTML='現在の入力額：<strong>月'+m.toLocaleString()+'円</strong><br>年間では約<strong>'+(m*12).toLocaleString()+'円</strong>。<hr>見直し余地の目安：<strong>年間'+e.toLocaleString()+'円前後</strong><p>まずは「スマホ → ネット → サブスク → AI」の順で比較してみましょう。</p>';showAhamo();}
+    function showAhamo(){
+  const r=document.getElementById('result');
+  if(!r)return;
+  r.innerHTML += '<div style="margin-top:24px;padding:20px;background:#f4f7ff;border-radius:16px;text-align:center"><div style="font-size:13px;color:#666;margin-bottom:8px">PR</div><b>📱 スマホ代を見直すなら</b><p>料金プランの比較候補としてahamoをチェックできます。</p><a href="https://px.a8.net/svt/ejp?a8mat=4BCL3Y+F006GI+4TIO+5YJRM" rel="nofollow sponsored" style="display:inline-block;padding:14px 24px;background:#376cf6;color:white;text-decoration:none;border-radius:10px;font-weight:bold">ahamoの詳細を見る →</a></div>';
+}
 </script></body></html>
